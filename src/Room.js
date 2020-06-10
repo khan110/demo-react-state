@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import './room.css';
 function Room() {
-  const [isLit, setLit] = useState(true);
+  let [isLit, setLit] = useState(false);
   return (
-    <div classname= "room">
-      This is the Room component for use state learning demo :
+    <div className= {'room $ {isLit? "lit" : "dark"}'}>
+      This Room is  :
       {isLit? "lit" : "dark"}
       <br/>
-            <button onClick= {() => setLit(!isLit)}> Flip  </button>
+            <button onClick= {() => setLit(!isLit)}> On/Off  </button>
     </div>
   );
 }

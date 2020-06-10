@@ -1,5 +1,5 @@
  .room {  
-  height: 100vh
+  height: 200%;
 }
 .lit {
   background-color: white;
@@ -7,6 +7,6 @@
 }
 
 .dark {
-  background-color: black;
+  background-color: greenyellow;
   color: white;
 }
